@@ -1,0 +1,10 @@
+{
+    "name": "minesweeper",
+    "productName": "Minesweeper",
+    "version": "1.0.0",
+    "description": "Minesweeper clone with no adds.",
+    "main": "index.html",
+    "keywords": [],
+    "author": "Alberto Di Biase",
+    "license": "GPL3"
+}

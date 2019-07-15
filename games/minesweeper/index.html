@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="title">
+        <span id='time'>- - : - -</span>
+        <span id="face">😐</span>
+        <span id="score">💣</span>
+    </div>
+    <div id="board"></div>
+    <div class="controls">
+      <button id="newGame">New game</button>
+      <button id="confButton">Size</button>
+    </div>
+    <div id="settings">
+      <ul>
+        <li><label>Height </label><input id="width" type="number" value=9 min=0></li>
+        <li><label>Width </label><input id="height" type="number" value=9 min=0></li>
+        <li><label>Mines </label><input id="mines" type="number" value=9 min=0></li>
+      </ul>
+      <button id="newGame2">New Game</button>
+    </div>
+  <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>

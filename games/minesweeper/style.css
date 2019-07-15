@@ -1,0 +1,136 @@
+body {
+    max-width: 100%;
+    margin: 10px;
+}
+
+#title {
+    /* width: 50%; */
+    max-width: 600px;
+    /* margin: 0 auto; */
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+
+#title > span {
+    width: 4em;
+}
+
+#time {
+    width: 3em;
+}
+
+.controls {
+    /* width: 50%; */
+    margin: 2em;
+}
+
+button {
+    padding: 1em;
+    background-color: blue;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    color: white;
+    border: none;
+    width: 12em;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 1px #111122 inset;
+}
+
+
+/* #board {
+    width: 50%;
+    margin: 0 auto;
+} */
+
+table.board {
+    /* background-color: gray; */
+    border-spacing: 0px;
+    /* width: 100%; */
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+.cell {
+    width: 22px;
+    height: 22px;
+    background-color: #888;
+    border: 5px outset #555;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: #5d5d5d 2px 1px 2px;
+
+    /* background: linear-gradient(to bottom, #111 20%, #888 20% 80%, #111 80%) */
+}
+.cell:active {
+    border-style: inset;
+}
+.pressed {
+    border-color: #888;
+    border-style: ridge;
+    /* border-width: 2px; */
+}
+.pressed.cell:active {
+    border-style: ridge;
+}
+
+#settings {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: #20AA20;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 20px #111;
+}
+
+input {
+    width: 2em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: auto;
+
+}
+li {
+    margin: 10px;
+}
+
+.one {
+    color: #006efd;
+}
+.two {
+    color: #1cff3a;
+}
+.three {
+    color: #dd1010;
+}
+.four {
+    color: #000986;
+}
+.five {
+    color: #ac1748;
+}
+.six {
+    color: #0d971f;
+}
+.seven {
+    color: #8a5403;
+}
+.eight {
+    color: #ca07e4;
+}
+
+
