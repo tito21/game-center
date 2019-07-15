@@ -1,0 +1,35 @@
+body {
+    max-width: 100%;
+    margin: 10px;
+}
+
+button {
+    padding: 1em;
+    background-color: blue;
+    margin-right: 1em;
+    color: white;
+    border: none;
+    width: 12em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: auto;
+
+}
+li {
+    margin: 10px;
+}
+
+.game-box {
+    width:100px;
+    height: 100px;
+    background-color: #12AA12;
+    color: white;
+    text-align: center;
+}
+
+.game-box:hover {
+    cursor: pointer;
+}
