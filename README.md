@@ -4,6 +4,9 @@ Electron app to serve as a hub for classic desktop apps.
 
 # Building
 
+Use `git clone https://github.com/tito21/game-center.git`. Then install all
+the dependencies with `npm install`.
+
 To run locally use `electron-forge start` and to build binaries use
 `electron-forge make`.
 
