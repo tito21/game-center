@@ -58,8 +58,8 @@ table.board {
     padding: 0;
 }
 .cell {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     background-color: #888;
     border: 5px outset #555;
     text-align: center;
@@ -99,7 +99,7 @@ table.board {
 }
 
 input {
-    width: 2em;
+    width: 6em;
 }
 
 ul {

@@ -102,7 +102,7 @@ let board = {
                                  board.array[i-1][ j ], board.array[ i ][ j ]];
                 }
                 else if (i == board.rows-1 && j == 0) {
-                    neighbors = [board.array[i-1][ j ], board.array[i-1][j-1],
+                    neighbors = [board.array[i-1][ j ], board.array[i-1][j+1],
                                  board.array[ i ][ j ], board.array[ i ][j+1]];
                 }
                 else if (i == 0 && j == board.cols-1) {
@@ -118,11 +118,11 @@ let board = {
                                  board.array[ i ][ j ], board.array[ i ][j+1],
                                  board.array[i+1][ j ], board.array[i+1][j+1]];
                 }
-                else if (i == board.cols-1) {
+                else if (i == board.rows-1) {
                     neighbors = [board.array[i-1][j-1], board.array[i-1][ j ], board.array[i-1][j+1],
                                  board.array[ i ][j-1], board.array[ i ][ j ], board.array[ i ][j+1]];
                 }
-                else if (j == board.rows-1) {
+                else if (j == board.cols-1) {
                     neighbors = [board.array[i-1][j-1], board.array[i-1][ j ],
                                  board.array[ i ][j-1], board.array[ i ][ j ],
                                  board.array[i+1][j-1], board.array[i+1][ j ]];
@@ -290,6 +290,8 @@ function drawBoard(boardElement) {
 
     board.tableElement.addEventListener("click", manageClick);
 
+    // Set window size
+    window.resizeTo(board.rows * 40 + 30, board.cols * 40 + 230);
     return board.tableElement;
 }
 
