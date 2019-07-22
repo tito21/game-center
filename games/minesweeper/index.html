@@ -8,13 +8,13 @@
   <body>
     <div id="title">
         <span id='time'>- - : - -</span>
-        <span id="face">😐</span>
+        <span id="face" class="clickable">😐</span>
         <span id="score">💣</span>
     </div>
     <div id="board"></div>
     <div class="controls">
-      <button id="newGame">New game</button>
-      <button id="confButton">Size</button>
+      <button id="newGame" class="clickable">New game</button>
+      <button id="confButton" class="clickable">Size</button>
     </div>
     <div id="settings">
       <ul>
@@ -22,7 +22,7 @@
         <li><label>Width </label><input id="height" type="number" value=9 min=0></li>
         <li><label>Mines </label><input id="mines" type="number" value=9 min=0></li>
       </ul>
-      <button id="newGame2">New Game</button>
+      <button id="newGame2" class="clickable" >New Game</button>
     </div>
   <script type="text/javascript" src="game.js"></script>
   </body>

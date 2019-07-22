@@ -310,6 +310,13 @@ board.newGame();
 board.fillBoard();
 let tableElement = drawBoard(boardElement);
 
+document.getElementById("face").addEventListener("click", () => {
+    board.newGame();
+    board.fillBoard();
+    tableElement = drawBoard(boardElement);
+    console.log("newGame")
+});
+
 newGame.addEventListener("click", (ev) => {
     board.newGame();
     board.fillBoard();
@@ -329,6 +336,7 @@ newGame2.addEventListener("click", (ev) => {
     settingsElement.style = "display: none"
     board.newGame();
     board.fillBoard();
+    tableElement.innerHTML = "";
     tableElement = drawBoard(boardElement);
     console.log("newGame");
 });

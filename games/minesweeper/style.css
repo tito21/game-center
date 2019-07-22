@@ -94,6 +94,10 @@ table.board {
     box-shadow: 0 0 20px 20px #111;
 }
 
+.clickable {
+    cursor: pointer
+}
+
 input {
     width: 2em;
 }
